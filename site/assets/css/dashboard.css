@@ -1,0 +1,43 @@
+.badge{display:inline-block;margin:.6rem 0 0;padding:.35rem .8rem;font-size:.8rem;letter-spacing:.08em;border:1px solid var(--rose-d);color:var(--text)}
+.filters{justify-content:center;margin:0 0 2rem}
+.tiles{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(10.5rem,1fr));margin:0 0 2.5rem}
+.tile{padding:1.25rem 1.1rem;background:var(--bg-2);border:1px solid var(--line);text-align:center}
+.tile .v{display:block;font:600 2.6rem/1.1 var(--serif);font-variant-numeric:tabular-nums;color:var(--text)}
+.tile .k{font:400 .7rem/1.4 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-text)}
+.charts{display:grid;gap:1.5rem;margin:0 0 2.5rem}
+@media (min-width:900px){.charts{grid-template-columns:1fr 1fr}}
+.chart h2{font-size:1.5rem;margin:0 0 .3rem}
+.chart svg{width:100%;height:auto;overflow:visible}
+.chart .bar{fill:var(--bar,#8A6A2E);transition:opacity .2s}
+.chart .bar.alt{--bar:#B77A72}
+.chart g.m:hover .bar,.chart g.m:focus .bar{opacity:.8}
+.chart g.m:focus{outline:none}
+.chart g.m:focus .hit{stroke:var(--gold-text);stroke-width:2}
+.chart .hit{fill:transparent}
+.chart text{fill:var(--muted);font:400 13px var(--sans)}
+.chart text.val{fill:var(--text);font-weight:400}
+.chart .base{stroke:var(--line)}
+.tip{position:fixed;z-index:20;pointer-events:none;padding:.4rem .7rem;background:var(--text);color:var(--bg);font-size:.85rem}
+table{width:100%;border-collapse:collapse;margin:0 0 2rem}
+th,td{padding:.55rem .5rem;border-bottom:1px solid var(--line);text-align:left;font-variant-numeric:tabular-nums}
+th{font:400 .7rem/1.3 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--gold-text)}
+.looker iframe{width:100%;aspect-ratio:4/3;border:0;background:var(--bg)}
+.send{margin:0 0 2rem}.send h2{font-size:1.5rem;margin:0 0 1rem}
+.send-grid{display:grid;gap:1rem}@media (min-width:760px){.send-grid{grid-template-columns:1fr 1fr}}
+.seg{display:inline-flex;flex-wrap:wrap;gap:4px;padding:4px;border-radius:999px;border:1px solid var(--line)}
+.seg label{position:relative;cursor:pointer}.seg input{position:absolute;opacity:0}
+.seg span{display:inline-flex;align-items:center;white-space:nowrap;min-height:44px;padding:0 1.1rem;border-radius:999px;font:500 .74rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
+.seg input:checked+span{background:var(--gold-grad);color:#1A1208}.seg input:focus-visible+span{outline:2px solid var(--gold-hi)}
+/* personal links log */
+.linklog .ll-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(8.5rem,1fr));gap:.6rem;margin:.6rem 0 1rem}
+.linklog .ll-tile{display:grid;gap:.15rem;padding:.8rem 1rem;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.linklog .ll-tile .v{font:500 1.6rem/1 var(--display);color:var(--gold)}
+.linklog .ll-tile .k{font:500 .7rem/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--mist)}
+.ll-tools{gap:.6rem;margin-bottom:.6rem}
+.ll-tools input{flex:1;min-width:10rem}
+.ll-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px}
+.ll-table{width:100%;border-collapse:collapse;font:400 .88rem/1.4 var(--sans)}
+.ll-table th,.ll-table td{padding:.55rem .75rem;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+.ll-table thead th{font:500 .68rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--mist)}
+.ll-table tbody th{font-weight:500;color:var(--ivory)}
+.ll-copy{padding:.3rem .8rem;font-size:.72rem}

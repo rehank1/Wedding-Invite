@@ -1,0 +1,36 @@
+{
+  "name": "heirloom-wedding-invite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rehan & Siddiqua: heirloom wedding invitation (static site for GitHub Pages)",
+  "type": "module",
+  "scripts": {
+    "serve": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "fonts": "node scripts/fonts.mjs",
+    "photos": "node scripts/photos.mjs",
+    "test": "playwright test --project=chromium --project=webkit-desktop --project=webkit-iphone --project=chromium-android --project=edge && playwright test --project=intro --workers=1",
+    "lighthouse": "node scripts/lighthouse.mjs",
+    "videos": "node scripts/videos.mjs",
+    "test:ci": "npm run check:secrets && playwright test --project=chromium --project=firefox --project=webkit-desktop --project=webkit-iphone --project=chromium-android && playwright test --project=intro --workers=1",
+    "check:secrets": "node scripts/secrets-check.mjs",
+    "keys": "node scripts/keys.mjs",
+    "login": "node scripts/set-login.mjs"
+  },
+  "devDependencies": {
+    "@fontsource/amiri": "^5.3.0",
+    "@fontsource/bodoni-moda": "^5.3.0",
+    "@fontsource/cinzel": "^5.3.0",
+    "@fontsource/cinzel-decorative": "^5.3.0",
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@fontsource/great-vibes": "^5.3.0",
+    "@fontsource/jost": "^5.3.0",
+    "@fontsource/pinyon-script": "^5.3.0",
+    "@playwright/test": "^1.65.1",
+    "ffmpeg-static": "^5.3.0",
+    "lighthouse": "^13.6.0",
+    "qrcode-generator": "^2.0.4",
+    "sharp": "^0.35.5",
+    "subset-font": "^2.9.0"
+  }
+}

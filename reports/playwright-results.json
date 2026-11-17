@@ -1,0 +1,263 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Dell\\OneDrive\\Desktop\\wedding invite\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--project=intro",
+      "--workers=1"
+    ],
+    "configFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\wedding invite\\playwright.config.js",
+    "rootDir": "C:/Users/Dell/OneDrive/Desktop/wedding invite/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Dell/OneDrive/Desktop/wedding invite/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Dell/OneDrive/Desktop/wedding invite/tests",
+        "testIgnore": [
+          "/(compat|cine|perf)[.]spec/"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/Dell/OneDrive/Desktop/wedding invite/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "intro",
+        "name": "intro",
+        "testDir": "C:/Users/Dell/OneDrive/Desktop/wedding invite/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/(cine|perf)[.]spec/"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/Dell/OneDrive/Desktop/wedding invite/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit-desktop",
+        "name": "webkit-desktop",
+        "testDir": "C:/Users/Dell/OneDrive/Desktop/wedding invite/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/compat.spec/"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/Dell/OneDrive/Desktop/wedding invite/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "edge",
+        "name": "edge",
+        "testDir": "C:/Users/Dell/OneDrive/Desktop/wedding invite/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/compat.spec/"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/Dell/OneDrive/Desktop/wedding invite/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit-iphone",
+        "name": "webkit-iphone",
+        "testDir": "C:/Users/Dell/OneDrive/Desktop/wedding invite/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/compat\\.spec/"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/Dell/OneDrive/Desktop/wedding invite/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium-android",
+        "name": "chromium-android",
+        "testDir": "C:/Users/Dell/OneDrive/Desktop/wedding invite/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/compat\\.spec/"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Dell\\OneDrive\\Desktop\\wedding invite\\test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "intro",
+        "testDir": "C:\\Users\\Dell\\OneDrive\\Desktop\\wedding invite\\tests",
+        "snapshotDir": "C:\\Users\\Dell\\OneDrive\\Desktop\\wedding invite\\tests",
+        "testIgnore": [],
+        "testMatch": {},
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://localhost:4174/",
+          "trace": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "intro"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/playwright-results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/playwright-html",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node scripts/build.mjs && node scripts/serve.mjs dist 4174",
+      "port": 4174,
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "perf.spec.js",
+      "file": "perf.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "layout stability (CLS) and scroll smoothness",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "metrics",
+                  "description": "CLS 0.0002 · p95 frame 33.4ms over 54 frames"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "intro",
+              "projectName": "intro",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3785,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T23:57:20.224Z",
+                  "annotations": [
+                    {
+                      "type": "metrics",
+                      "description": "CLS 0.0002 · p95 frame 33.4ms over 54 frames"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cc1e91386849cdb76657-581cdd4b4b4d784733a5",
+          "file": "perf.spec.js",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-15T23:57:16.986Z",
+    "duration": 7741.299000000001,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="__CSP__">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="noindex, nofollow">
+<title>Invitation studio · Rehan &amp; Siddiqua</title>
+<meta name="description" content="Create a personalised invitation link.">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/tools.css">
+<script src="../assets/vendor/qrcode.js" defer></script>
+<script type="module" src="../assets/js/create.js"></script>
+</head>
+<body class="private">
+<div class="top"><a class="brand" href="../?skip=1">R &amp; S</a><button class="btn signout" id="signout" type="button">Sign out</button></div>
+<main class="page">
+  <header><p class="label">Invitation studio</p><h1>Create a personal invitation</h1><p class="muted">Each guest gets a link that greets them by name and shows only their celebrations.</p></header>
+  <div class="split">
+    <div>
+      <form class="box" id="form" novalidate>
+        <h2>Guest</h2>
+        <label class="field"><span>Honorific</span>
+          <select id="hon"><option value="">None</option><option>Mr.</option><option>Mrs.</option><option>Ms.</option><option>Dr.</option><option>Janab</option><option>Mohtarma</option><option>Hafiz</option><option>Haji</option></select></label>
+        <label class="field"><span>Name (max 60 characters)</span><input id="name" maxlength="60" autocomplete="off" placeholder="Ahmed Khan and family"><small class="err-text" id="name-err" aria-live="polite"></small></label>
+        <fieldset class="field"><legend>Invited to</legend><div id="events"></div></fieldset>
+      </form>
+      <section class="box" aria-labelledby="out-h">
+        <h2 id="out-h">Their link</h2>
+        <p class="out" id="link" aria-live="polite"></p>
+        <div class="row">
+          <button class="btn solid" id="copy" type="button">Copy link</button>
+          <a class="btn" id="wa" target="_blank" rel="noopener noreferrer" href="https://wa.me/">Share on WhatsApp</a>
+          <a class="btn" id="open" target="_blank" rel="noopener">Open</a>
+        </div>
+        <p class="note" id="copied" role="status"></p>
+        <div class="qr"><canvas id="qr" width="180" height="180" role="img" aria-label="QR code for the invitation link"></canvas><button class="btn" id="qr-dl" type="button">Download QR</button></div>
+      </section>
+    </div>
+    <div class="sticky">
+      <p class="label">Live preview</p>
+      <div class="phone"><iframe id="preview" title="Invitation preview" src="about:blank"></iframe></div>
+    </div>
+  </div>
+</main>
+</body>
+</html>

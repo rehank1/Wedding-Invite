@@ -1,0 +1,23 @@
+node_modules/
+dist/
+.cache/
+test-results/
+reports/playwright-html/
+reports/.pw-install.log
+scripts/_*.mjs
+.impeccable/
+*.zip
+.env
+# secrets and local-only settings never go in the repo
+.env*
+!.env.example
+*.pem
+*.key
+*.p12
+secrets/
+.claude/settings.local.json
+# raw source media (large, kept local; the site uses the processed copies in site/assets)
+/*.mp4
+/*.mov
+# private signing key for personal invite links
+.keys/

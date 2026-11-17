@@ -1,0 +1,127 @@
+{
+  "site": {
+    "title": "Rehan & Siddiqua",
+    "description": "You are invited to the Nikah and Reception of Rehan and Siddiqua, 18 and 19 December 2026, Pune.",
+    "url": "",
+    "ga4": "G-XXXXXXX",
+    "rsvpEndpoint": "",
+    "lookerUrl": "",
+    "passHash": ""
+  },
+  "couple": {
+    "groom": {
+      "name": "Rehan",
+      "fullName": "Rehan Kazi",
+      "parents": "Son of Marhoom Mr. Mohd. Galib Kazi and Mrs. Shaheen Kazi"
+    },
+    "bride": {
+      "name": "Siddiqua",
+      "fullName": "Siddiqua Shariff",
+      "parents": "Daughter of Mr. and Mrs. Sarfaraz Ibrahim Shariff"
+    },
+    "monogram": "R & S",
+    "hashtag": ""
+  },
+  "wording": {
+    "bismillahArabic": "بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "bismillahEnglish": "In the Name of God, the Most Beneficent and the Most Merciful",
+    "memorial": "In loving memory of Marhoom Mr. Mohd. Galib Kazi and with the warm blessings of Mrs. Shaheen Kazi",
+    "request": "We cordially request the pleasure of your company, along with your family and friends, on the auspicious occasion of",
+    "closing": "We request the honour of your gracious presence and your blessings for the newlyweds on this joyous occasion.",
+    "closingDuaArabic": "بَارَكَ ٱللَّٰهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ",
+    "closingDuaEnglish": "May Allah bless you both, shower His blessings upon you, and unite you in goodness.",
+    "compliments": "Kazi Family, Relatives, and Friends",
+    "duasFrom": "Rumaisha, Mohammad Ali, and Minsa",
+    "duaLines": [
+      "May Allah bless your union and fill your home with mercy.",
+      "May your love be a source of peace, and your home a place of tranquillity.",
+      "May Allah unite you both in goodness, in this world and the next."
+    ]
+  },
+  "events": [
+    {
+      "id": "nikah",
+      "name": "Nikah",
+      "occasion": "the Nikah of their beloved son",
+      "date": "2026-12-18",
+      "time": "19:00",
+      "endTime": "23:00",
+      "timeNote": "7:00 PM onwards (after Namaz-e-Maghrib)",
+      "hijri": "08th Rajab 1448 Hijri",
+      "venue": "Krishna Lawns",
+      "address": "SRPF, Wanowrie, Pune",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Krishna%20Lawns%2C%20SRPF%2C%20Wanowrie%2C%20Pune",
+      "notes": "",
+      "programme": [
+        {
+          "time": "7:00 PM",
+          "title": "Guests arrive",
+          "note": ""
+        },
+        {
+          "time": "After Maghrib",
+          "title": "The Nikah",
+          "note": ""
+        },
+        {
+          "time": "",
+          "title": "Dinner",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "walima",
+      "name": "Reception",
+      "occasion": "the wedding reception of their beloved son",
+      "date": "2026-12-19",
+      "time": "19:00",
+      "endTime": "23:00",
+      "timeNote": "7:00 PM onwards (after Namaz-e-Maghrib)",
+      "hijri": "09th Rajab 1448 Hijri",
+      "venue": "Krishna Lawns",
+      "address": "SRPF, Wanowrie, Pune",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Krishna%20Lawns%2C%20SRPF%2C%20Wanowrie%2C%20Pune",
+      "notes": "",
+      "programme": [
+        {
+          "time": "7:00 PM",
+          "title": "Guests arrive",
+          "note": ""
+        },
+        {
+          "time": "After Maghrib",
+          "title": "The couple arrives",
+          "note": ""
+        },
+        {
+          "time": "",
+          "title": "Dinner",
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "music": {
+    "src": "",
+    "title": ""
+  },
+  "afterparty": {
+    "name": "After Hours",
+    "date": "",
+    "time": "",
+    "venue": "",
+    "mapsUrl": "",
+    "dressCode": "",
+    "note": "Bring your own booze if you want. The host doesn't drink (it's haraam), and honestly you should skip it too 😉"
+  },
+  "dayOf": {
+    "photoAlbumUrl": "",
+    "parking": "",
+    "note": ""
+  },
+  "footer": {
+    "thanks": "",
+    "family": "Kazi Family, Relatives, and Friends"
+  }
+}

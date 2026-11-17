@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="__CSP__">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<title>Dashboard · Rehan &amp; Siddiqua</title>
+<meta name="description" content="Private RSVP dashboard.">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/tools.css">
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+<script type="module" src="../assets/js/dashboard.js"></script>
+</head>
+<body>
+<form class="gate" id="gate" hidden><p class="label">Private</p><h1>Dashboard</h1>
+  <label class="field"><span>Passphrase</span><input type="password" autocomplete="current-password" required></label>
+  <button class="btn solid" type="submit">Enter</button><p role="alert"></p></form>
+<div id="app" hidden>
+  <div class="top"><a class="brand" href="../?skip=1">R &amp; S</a><nav aria-label="Tools"><a href="../create/">Create</a><a href="../admin/">Content</a><a href="./" aria-current="page">Dashboard</a></nav></div>
+  <main class="page">
+    <header><p class="label">The invite at a glance</p><h1>Dashboard</h1><p class="muted" id="updated"></p><p class="badge" id="sample" hidden>Sample data · connect the Google Sheet to see real numbers</p></header>
+    <div class="row filters"><button class="btn" type="button" id="refresh">Refresh</button><button class="btn" type="button" id="toggle-table" aria-pressed="false">Show as table</button></div>
+    <section class="box send" aria-labelledby="send-h">
+      <h2 id="send-h">Send an invite</h2>
+      <div class="send-grid">
+        <label class="field"><span>Guest name</span><input id="s-name" maxlength="60" autocomplete="off" placeholder="Ahmed Khan and family"></label>
+        <fieldset class="field"><legend>Invite to</legend><div class="seg" id="s-which" role="radiogroup"></div></fieldset>
+      </div>
+      <p class="out" id="s-link" aria-live="polite"></p>
+      <div class="row"><button class="btn solid" type="button" id="s-copy">Copy link</button><a class="btn" id="s-wa" target="_blank" rel="noopener noreferrer" href="https://wa.me/">Send on WhatsApp</a><span class="note" id="s-msg" role="status"></span></div>
+    </section>
+    <section class="tiles" id="tiles" aria-label="Totals"></section>
+    <div class="charts" id="charts"></div>
+    <div id="tables" hidden></div>
+    <section class="box looker" aria-labelledby="lk-h"><h2 id="lk-h">Visits (Google Analytics via Looker Studio)</h2><div id="looker"></div></section>
+  </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,332 @@
+
+Running 51 tests using 2 workers
+
+  ok  2 [chromium] › tests\flows.spec.js:7:1 › opening: monogram intro opens to the couple in under 2s, focus lands on names (7.2s)
+  ok  1 [chromium] › tests\flows.spec.js:27:1 › opening: skip, Escape and reduced motion (7.7s)
+  ok  3 [chromium] › tests\flows.spec.js:43:1 › generator → invite shows only the chosen celebration (9.7s)
+  ok  4 [chromium] › tests\flows.spec.js:66:1 › duas: choose, sign in gold, press the seal; it lands in the chest and reaches the Sheet (12.9s)
+  ok  5 [chromium] › tests\flows.spec.js:94:1 › duas: own words, keyboard only, signature optional (10.5s)
+  ok  6 [chromium] › tests\flows.spec.js:109:1 › the evening: pocket watch hand moves by tap, keyboard and drag; tabs switch celebrations (8.6s)
+  ok  8 [chromium] › tests\flows.spec.js:160:1 › dock: Directions, Calendar and Next chapter; rail tracks the chapter (4.0s)
+  ok  7 [chromium] › tests\flows.spec.js:144:1 › the evening: venue panel has a lazy sandboxed map, directions, calendar (.ics + Google) (6.0s)
+  ok  9 [chromium] › tests\flows.spec.js:172:1 › countdown flips and the gold foil scratches away (13.2s)
+  ok 11 [chromium] › tests\flows.spec.js:224:1 › easter egg: Konami code opens it; Escape closes; typing in a field does not (2.5s)
+  ok 12 [chromium] › tests\flows.spec.js:234:1 › time-aware phases: week, day (Today card) and after (4.5s)
+  ok 10 [chromium] › tests\flows.spec.js:193:1 › easter egg: 7 quiet taps on the closing monogram, then afterparty sign-up with picks (23.6s)
+  ok 14 [chromium] › tests\flows.spec.js:258:1 › admin: edit, validate, add a tour stop, download content.json (3.2s)
+  ok 15 [chromium] › tests\flows.spec.js:283:1 › passphrase gate on admin and dashboard (2.5s)
+  ok 16 [chromium] › tests\flows.spec.js:300:1 › dashboard: duas and afterparty stats from the sheet (1.0s)
+  ok 17 [chromium] › tests\flows.spec.js:314:1 › analytics stays off with the placeholder ID and asks consent with a real one (3.5s)
+  ok 18 [chromium] › tests\flows.spec.js:327:1 › music: starts with the tap that opens the invitation, mutes, and remembers (6.6s)
+  ok 19 [chromium] › tests\security.spec.js:22:3 › ?to= payload is rendered as inert text: <img src=x onerror="wind (3.5s)
+  x  13 [chromium] › tests\flows.spec.js:247:1 › first page: gold botanicals draw in around the monogram, blossoms fall, no videos or WebGL intro (3.5s)
+  ok 20 [chromium] › tests\security.spec.js:22:3 › ?to= payload is rendered as inert text: "><script>window.__xss=1 (3.2s)
+  ok 21 [chromium] › tests\security.spec.js:22:3 › ?to= payload is rendered as inert text: '><svg/onload=window.__x (4.4s)
+  ok 23 [chromium] › tests\security.spec.js:22:3 › ?to= payload is rendered as inert text: javascript:window.__xss= (4.2s)
+  ok 24 [chromium] › tests\security.spec.js:22:3 › ?to= payload is rendered as inert text: ‮evil‬<iframe src=javasc (3.5s)
+  x  22 [chromium] › tests\flows.spec.js:247:1 › first page: gold botanicals draw in around the monogram, blossoms fall, no videos or WebGL intro (retry #1) (4.9s)
+  ok 25 [chromium] › tests\security.spec.js:22:3 › ?to= payload is rendered as inert text: {{constructor.constructo (2.7s)
+  ok 26 [chromium] › tests\security.spec.js:39:1 › ?e= ignores unknown event ids (846ms)
+  ok 27 [chromium] › tests\security.spec.js:22:3 › ?to= payload is rendered as inert text: AAAAAAAAAAAAAAAAAAAAAAAA (4.2s)
+  ok 29 [chromium] › tests\security.spec.js:67:1 › generator sanitises and URL-encodes names (727ms)
+  ok 30 [chromium] › tests\security.spec.js:77:1 › admin sanitises pasted content and rejects bad URLs (2.3s)
+  x  28 [chromium] › tests\security.spec.js:44:1 › hostile content.json values stay inert (6.6s)
+  ok 31 [chromium] › tests\security.spec.js:90:1 › afterparty name field cannot inject markup (4.1s)
+  ok 33 [chromium] › tests\security.spec.js:100:3 › security headers + clean console + links on ./ (4.0s)
+  ok 34 [chromium] › tests\security.spec.js:100:3 › security headers + clean console + links on ./create/ (2.2s)
+  x  32 [chromium] › tests\security.spec.js:44:1 › hostile content.json values stay inert (retry #1) (8.0s)
+  ok 35 [chromium] › tests\security.spec.js:100:3 › security headers + clean console + links on ./admin/ (2.2s)
+  ok 36 [chromium] › tests\visual.spec.js:12:5 › @375px › opening screenshot (3.6s)
+  ok 37 [chromium] › tests\security.spec.js:100:3 › security headers + clean console + links on ./dashboard/ (2.3s)
+  ok 39 [chromium] › tests\visual.spec.js:12:5 › @768px › opening screenshot (5.0s)
+  ok 38 [chromium] › tests\visual.spec.js:22:5 › @375px › chapters: screenshots, overflow, overlaps, fonts (8.2s)
+  ok 41 [chromium] › tests\visual.spec.js:12:5 › @1024px › opening screenshot (5.8s)
+  ok 40 [chromium] › tests\visual.spec.js:22:5 › @768px › chapters: screenshots, overflow, overlaps, fonts (11.5s)
+  ok 43 [chromium] › tests\visual.spec.js:12:5 › @1440px › opening screenshot (4.9s)
+  ok 42 [chromium] › tests\visual.spec.js:22:5 › @1024px › chapters: screenshots, overflow, overlaps, fonts (11.4s)
+  ok 45 [chromium] › tests\visual.spec.js:60:1 › botanical light theme: blush paper on every chapter, regardless of OS dark mode (1.7s)
+  ok 44 [chromium] › tests\visual.spec.js:22:5 › @1440px › chapters: screenshots, overflow, overlaps, fonts (11.8s)
+  ok 47 [webkit-desktop] › tests\compat.spec.js:19:1 › tool pages load cleanly (4.1s)
+  x  46 [webkit-desktop] › tests\compat.spec.js:5:1 › invite opens, renders, turns the watch and seals a dua (10.6s)
+  ok 48 [edge] › tests\compat.spec.js:5:1 › invite opens, renders, turns the watch and seals a dua (10.4s)
+  ok 50 [edge] › tests\compat.spec.js:19:1 › tool pages load cleanly (3.0s)
+  x  49 [webkit-desktop] › tests\compat.spec.js:5:1 › invite opens, renders, turns the watch and seals a dua (retry #1) (17.8s)
+  ok 52 [webkit-iphone] › tests\compat.spec.js:19:1 › tool pages load cleanly (3.4s)
+  x  51 [webkit-iphone] › tests\compat.spec.js:5:1 › invite opens, renders, turns the watch and seals a dua (9.7s)
+  ok 53 [chromium-android] › tests\compat.spec.js:5:1 › invite opens, renders, turns the watch and seals a dua (11.4s)
+  ok 55 [chromium-android] › tests\compat.spec.js:19:1 › tool pages load cleanly (2.1s)
+  x  54 [webkit-iphone] › tests\compat.spec.js:5:1 › invite opens, renders, turns the watch and seals a dua (retry #1) (13.8s)
+
+
+  1) [chromium] › tests\flows.spec.js:247:1 › first page: gold botanicals draw in around the monogram, blossoms fall, no videos or WebGL intro 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 2
+
+      251 |   expect(await page.locator('#envelope .art .bot path').count()).toBeGreaterThan(60);
+      252 |   expect(await page.locator('.falling .blossom').count()).toBe(7);
+    > 253 |   expect(await page.locator('video, #cine, canvas').count()).toBe(0);
+          |                                                              ^
+      254 |   await expect.poll(() => page.locator('#envelope .art .bot path').first().evaluate((n) => getComputedStyle(n).strokeDashoffset), { timeout: 5000 }).toBe('0px');
+      255 |   c.assertClean();
+      256 | });
+        at C:\Users\Dell\OneDrive\Desktop\wedding invite\tests\flows.spec.js:253:62
+
+    Error Context: test-results\flows-first-page-gold-bota-be7cf-ll-no-videos-or-WebGL-intro-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\flows-first-page-gold-bota-be7cf-ll-no-videos-or-WebGL-intro-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\flows-first-page-gold-bota-be7cf-ll-no-videos-or-WebGL-intro-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 2
+
+      251 |   expect(await page.locator('#envelope .art .bot path').count()).toBeGreaterThan(60);
+      252 |   expect(await page.locator('.falling .blossom').count()).toBe(7);
+    > 253 |   expect(await page.locator('video, #cine, canvas').count()).toBe(0);
+          |                                                              ^
+      254 |   await expect.poll(() => page.locator('#envelope .art .bot path').first().evaluate((n) => getComputedStyle(n).strokeDashoffset), { timeout: 5000 }).toBe('0px');
+      255 |   c.assertClean();
+      256 | });
+        at C:\Users\Dell\OneDrive\Desktop\wedding invite\tests\flows.spec.js:253:62
+
+    Error Context: test-results\flows-first-page-gold-bota-be7cf-ll-no-videos-or-WebGL-intro-chromium-retry1\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\flows-first-page-gold-bota-be7cf-ll-no-videos-or-WebGL-intro-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\flows-first-page-gold-bota-be7cf-ll-no-videos-or-WebGL-intro-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › tests\security.spec.js:44:1 › hostile content.json values stay inert ─────────────
+
+    Error: expect(locator).toBeHidden() failed
+
+    Locator:  locator('#music-btn')
+    Expected: hidden
+    Received: visible
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeHidden" locator('#music-btn') with timeout 5000ms
+      - waiting for locator('#music-btn')
+        13 × locator resolved to <button class="ctl" type="button" id="music-btn" aria-pressed="false" aria-label="Play music">…</button>
+           - unexpected value "visible"
+
+
+      60 |   const hrefs = await page.evaluate(() => [...document.querySelectorAll('a[href]')].map((a) => a.getAttribute('href')));
+      61 |   for (const h of hrefs) expect(h).not.toMatch(/^s*(javascript|data):/i);
+    > 62 |   await expect(page.locator('#music-btn')).toBeHidden();
+         |                                            ^
+      63 |   await expect(page.locator('#venue-nikah .big')).toHaveText('"svg onload=window.__xss=1');
+      64 |   c.assertClean();
+      65 | });
+        at C:\Users\Dell\OneDrive\Desktop\wedding invite\tests\security.spec.js:62:44
+
+    Error Context: test-results\security-hostile-content-json-values-stay-inert-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\security-hostile-content-json-values-stay-inert-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\security-hostile-content-json-values-stay-inert-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeHidden() failed
+
+    Locator:  locator('#music-btn')
+    Expected: hidden
+    Received: visible
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeHidden" locator('#music-btn') with timeout 5000ms
+      - waiting for locator('#music-btn')
+        13 × locator resolved to <button class="ctl" type="button" id="music-btn" aria-pressed="false" aria-label="Play music">…</button>
+           - unexpected value "visible"
+
+
+      60 |   const hrefs = await page.evaluate(() => [...document.querySelectorAll('a[href]')].map((a) => a.getAttribute('href')));
+      61 |   for (const h of hrefs) expect(h).not.toMatch(/^s*(javascript|data):/i);
+    > 62 |   await expect(page.locator('#music-btn')).toBeHidden();
+         |                                            ^
+      63 |   await expect(page.locator('#venue-nikah .big')).toHaveText('"svg onload=window.__xss=1');
+      64 |   c.assertClean();
+      65 | });
+        at C:\Users\Dell\OneDrive\Desktop\wedding invite\tests\security.spec.js:62:44
+
+    Error Context: test-results\security-hostile-content-json-values-stay-inert-chromium-retry1\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\security-hostile-content-json-values-stay-inert-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\security-hostile-content-json-values-stay-inert-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [webkit-desktop] › tests\compat.spec.js:5:1 › invite opens, renders, turns the watch and seals a dua 
+
+    Error: pageerror: undefined is not a constructor (evaluating 'new (window.AudioContext || window.webkitAudioContext)()')
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "pageerror: undefined is not a constructor (evaluating 'new (window.AudioContext || window.webkitAudioContext)()')",
+    + ]
+
+       at helpers.js:13
+
+      11 |   });
+      12 |   page.on('pageerror', (e) => errors.push('pageerror: ' + e.message));
+    > 13 |   return { errors, assertClean: () => expect(errors, errors.join('\n')).toEqual([]) };
+         |                                                                         ^
+      14 | }
+      15 |
+      16 | export async function openInvite(page, query = '') {
+        at Object.assertClean (C:\Users\Dell\OneDrive\Desktop\wedding invite\tests\helpers.js:13:73)
+        at C:\Users\Dell\OneDrive\Desktop\wedding invite\tests\compat.spec.js:15:5
+
+    Error Context: test-results\compat-invite-opens-renders-turns-the-watch-and-seals-a-dua-webkit-desktop\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\compat-invite-opens-renders-turns-the-watch-and-seals-a-dua-webkit-desktop\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\compat-invite-opens-renders-turns-the-watch-and-seals-a-dua-webkit-desktop\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: pageerror: undefined is not a constructor (evaluating 'new (window.AudioContext || window.webkitAudioContext)()')
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "pageerror: undefined is not a constructor (evaluating 'new (window.AudioContext || window.webkitAudioContext)()')",
+    + ]
+
+       at helpers.js:13
+
+      11 |   });
+      12 |   page.on('pageerror', (e) => errors.push('pageerror: ' + e.message));
+    > 13 |   return { errors, assertClean: () => expect(errors, errors.join('\n')).toEqual([]) };
+         |                                                                         ^
+      14 | }
+      15 |
+      16 | export async function openInvite(page, query = '') {
+        at Object.assertClean (C:\Users\Dell\OneDrive\Desktop\wedding invite\tests\helpers.js:13:73)
+        at C:\Users\Dell\OneDrive\Desktop\wedding invite\tests\compat.spec.js:15:5
+
+    Error Context: test-results\compat-invite-opens-renders-turns-the-watch-and-seals-a-dua-webkit-desktop-retry1\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\compat-invite-opens-renders-turns-the-watch-and-seals-a-dua-webkit-desktop-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\compat-invite-opens-renders-turns-the-watch-and-seals-a-dua-webkit-desktop-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [webkit-iphone] › tests\compat.spec.js:5:1 › invite opens, renders, turns the watch and seals a dua 
+
+    Error: pageerror: undefined is not a constructor (evaluating 'new (window.AudioContext || window.webkitAudioContext)()')
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "pageerror: undefined is not a constructor (evaluating 'new (window.AudioContext || window.webkitAudioContext)()')",
+    + ]
+
+       at helpers.js:13
+
+      11 |   });
+      12 |   page.on('pageerror', (e) => errors.push('pageerror: ' + e.message));
+    > 13 |   return { errors, assertClean: () => expect(errors, errors.join('\n')).toEqual([]) };
+         |                                                                         ^
+      14 | }
+      15 |
+      16 | export async function openInvite(page, query = '') {
+        at Object.assertClean (C:\Users\Dell\OneDrive\Desktop\wedding invite\tests\helpers.js:13:73)
+        at C:\Users\Dell\OneDrive\Desktop\wedding invite\tests\compat.spec.js:15:5
+
+    Error Context: test-results\compat-invite-opens-renders-turns-the-watch-and-seals-a-dua-webkit-iphone\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\compat-invite-opens-renders-turns-the-watch-and-seals-a-dua-webkit-iphone\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\compat-invite-opens-renders-turns-the-watch-and-seals-a-dua-webkit-iphone\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: pageerror: undefined is not a constructor (evaluating 'new (window.AudioContext || window.webkitAudioContext)()')
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "pageerror: undefined is not a constructor (evaluating 'new (window.AudioContext || window.webkitAudioContext)()')",
+    + ]
+
+       at helpers.js:13
+
+      11 |   });
+      12 |   page.on('pageerror', (e) => errors.push('pageerror: ' + e.message));
+    > 13 |   return { errors, assertClean: () => expect(errors, errors.join('\n')).toEqual([]) };
+         |                                                                         ^
+      14 | }
+      15 |
+      16 | export async function openInvite(page, query = '') {
+        at Object.assertClean (C:\Users\Dell\OneDrive\Desktop\wedding invite\tests\helpers.js:13:73)
+        at C:\Users\Dell\OneDrive\Desktop\wedding invite\tests\compat.spec.js:15:5
+
+    Error Context: test-results\compat-invite-opens-renders-turns-the-watch-and-seals-a-dua-webkit-iphone-retry1\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\compat-invite-opens-renders-turns-the-watch-and-seals-a-dua-webkit-iphone-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\compat-invite-opens-renders-turns-the-watch-and-seals-a-dua-webkit-iphone-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4 failed
+    [chromium] › tests\flows.spec.js:247:1 › first page: gold botanicals draw in around the monogram, blossoms fall, no videos or WebGL intro 
+    [chromium] › tests\security.spec.js:44:1 › hostile content.json values stay inert ──────────────
+    [webkit-desktop] › tests\compat.spec.js:5:1 › invite opens, renders, turns the watch and seals a dua 
+    [webkit-iphone] › tests\compat.spec.js:5:1 › invite opens, renders, turns the watch and seals a dua 
+  47 passed (3.6m)

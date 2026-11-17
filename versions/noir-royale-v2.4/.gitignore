@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.cache/
+test-results/
+reports/playwright-html/
+reports/.pw-install.log
+scripts/_*.mjs
+.impeccable/
+*.zip
+.env

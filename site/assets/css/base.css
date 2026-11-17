@@ -1,0 +1,110 @@
+/* NOIR ROYALE · design tokens, fonts, base. Shared by every page.
+   Colour roles: ivory = reading text · mist = secondary text · gold = names, key facts and anything you can press ·
+   rose = the duas moment only · onyx/aubergine/maroon = depth (never text). */
+@font-face{font-family:Bodoni;src:url(../fonts/bodoni-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Bodoni;src:url(../fonts/bodoni-400i.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:Bodoni;src:url(../fonts/bodoni-500.woff2) format("woff2");font-weight:500 600;font-display:swap}
+@font-face{font-family:Cormorant;src:url(../fonts/cormorant-500.woff2) format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:Cormorant;src:url(../fonts/cormorant-500i.woff2) format("woff2");font-weight:500;font-style:italic;font-display:swap}
+@font-face{font-family:Jost;src:url(../fonts/jost-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Jost;src:url(../fonts/jost-500.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:Amiri;src:url(../fonts/amiri-400.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0600-06FF,U+FD3E-FD3F,U+200C-200D}
+@font-face{font-family:"Great Vibes";src:url(../fonts/greatvibes-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Great Vibes Fallback";src:local("Segoe Script"),local("Apple Chancery"),local("Georgia Italic");size-adjust:92%}
+@font-face{font-family:"Bodoni Fallback";src:local("Didot"),local("Bodoni MT"),local("Times New Roman");size-adjust:96%;ascent-override:96%}
+@font-face{font-family:"Cormorant Fallback";src:local("Georgia");size-adjust:86%;ascent-override:108%}
+@font-face{font-family:"Jost Fallback";src:local("Arial");size-adjust:96%;ascent-override:104%}
+
+:root{
+  color-scheme:light;
+  /* BOTANICAL LIGHT · colour roles: ink = reading · taupe = secondary · gold = names, key facts and anything you can press ·
+     blush = soft accents · paper = surfaces (never text) */
+  --onyx:#F3EAE1;--onyx-2:#EDE2D6;--aubergine:#E9DCCF;--plum:#E6D3C8;--maroon:#C9A79A;
+  --gold:#8A6A2E;--gold-hi:#C9A85E;--gold-lo:#6E5322;--ivory:#2F2520;--mist:#6B5B50;--rose:#B77A72;
+  --paper:#F3EAE1;--card:#FBF7F2;--blush:#E7D2C7;
+  --line:rgba(138,106,46,.28);--line-strong:rgba(138,106,46,.55);
+  --surface:linear-gradient(160deg,#FCF9F4,#F7F0E7);
+  --gold-grad:linear-gradient(100deg,#7A5C24 0%,#B8954F 26%,#E3CB8C 40%,#A9853F 56%,#7A5C24 76%,#C9A85E 100%);
+  --stage:radial-gradient(90% 60% at 82% 6%,rgba(255,255,255,.75),transparent 60%),linear-gradient(115deg,rgba(255,255,255,0) 30%,rgba(255,255,255,.35) 45%,rgba(255,255,255,0) 60%),radial-gradient(80% 70% at 10% 100%,rgba(205,178,160,.35),transparent 70%),linear-gradient(180deg,#F5EDE4,#EFE4D8);
+  --bg:var(--paper);--bg-2:var(--card);--text:var(--ivory);--muted:var(--mist);--gold-text:var(--gold);--field:#FBF7F2;
+  --green:#8A6A2E;--on-panel:var(--ivory);--panel-gold:var(--gold);--rose-d:var(--rose);
+  --ease:cubic-bezier(0.22,1,0.36,1);
+  --script:"Great Vibes","Great Vibes Fallback","Snell Roundhand",cursive;--display:Bodoni,"Bodoni Fallback",Didot,"Times New Roman",serif;--serif:Cormorant,"Cormorant Fallback",Georgia,serif;--sans:Jost,"Jost Fallback",Arial,sans-serif;--arabic:Amiri,"Noto Naskh Arabic","Geeza Pro",serif;
+  --r:18px;
+}
+@view-transition{navigation:auto}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.45s;animation-timing-function:var(--ease)}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;min-height:100vh;background:var(--stage) fixed,var(--onyx);color:var(--ivory);font:400 1.0625rem/1.7 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg,video{display:block;max-width:100%}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.15;margin:0;letter-spacing:.06em;text-wrap:balance}
+p{margin:0 0 1em;text-wrap:pretty}
+a{color:var(--gold);text-underline-offset:.2em;text-decoration-thickness:1px}
+[hidden]{display:none!important}
+fieldset{border:0;margin:0 0 1.6rem;padding:0;min-width:0}
+.sprite{position:absolute;width:0;height:0;overflow:hidden}
+.ar{font-family:var(--arabic);font-size:1.75rem;line-height:1.9;letter-spacing:0}
+.label{font:500 .74rem/1.4 var(--sans);letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+.muted{color:var(--mist)}
+.accent{font:italic 500 1.35rem/1.45 var(--serif);color:var(--mist)}
+.gold-text{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--gold)}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+.skip{position:absolute;left:1rem;top:-4rem;z-index:100;background:var(--gold);color:#FFFBF4;padding:.6rem 1rem;border-radius:999px}
+.skip:focus{top:1rem}
+
+.btn{--c:var(--gold);position:relative;overflow:hidden;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:46px;padding:.7em 1.5em;
+  font:500 .76rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--c);background:rgba(255,255,255,.03);
+  border:1px solid currentColor;border-radius:999px;cursor:pointer;text-decoration:none;transition:transform .4s var(--ease),background-color .4s var(--ease),color .4s var(--ease)}
+.btn::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(105deg,transparent 35%,rgba(255,241,204,.35) 50%,transparent 65%);transform:translateX(-120%);transition:transform .9s var(--ease)}
+.btn:hover::after{transform:translateX(120%)}
+.btn:hover{background:rgba(212,175,106,.1)}
+.btn:active{transform:scale(.97)}
+.btn.solid{background:var(--gold-grad);background-size:200% 100%;color:#FFFBF4;text-shadow:0 1px 0 rgba(0,0,0,.18);border-color:transparent;box-shadow:0 14px 34px -14px rgba(212,175,106,.55)}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.ico{width:1.1em;height:1.1em;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+.field{display:grid;gap:.3rem;margin:0 0 1.4rem}
+.field>span,.field legend{font:500 .72rem/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+input,select,textarea{font:400 1.05rem/1.5 var(--sans);color:var(--ivory);background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:.55rem 0;width:100%;min-height:44px}
+textarea{resize:vertical;min-height:5.5rem}
+input:focus,select:focus,textarea:focus{outline:none;border-bottom-color:var(--gold);box-shadow:0 1px 0 0 var(--gold)}
+input[type=checkbox],input[type=radio]{width:1.15rem;height:1.15rem;min-height:0;accent-color:var(--gold);margin:0}
+input[type=range]{accent-color:var(--gold);border:0}
+select{background:var(--onyx-2)}
+.gate{max-width:24rem;margin:18vh auto;padding:2.5rem 1.5rem;text-align:center;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.gate h1{font-size:1.8rem;margin:.6rem 0 1.4rem}
+.gate [role=alert]{color:#A33A2F;min-height:1.5em;font-size:.9rem}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  ::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}
+
+/* ---------- Dark mode: the saved Noir Royale palette (onyx, aubergine, maroon depth; champagne gold; ivory text) ----------
+   Follows the device setting unless the guest picks a theme with the toggle (stored as data-theme). */
+/* dark is the default */
+:root:not([data-theme=light]){
+  color-scheme:dark;
+  --onyx:#08070B;--onyx-2:#100C14;--aubergine:#1E0F24;--plum:#2D1433;--maroon:#4A1022;
+  --gold:#D4AF6A;--gold-hi:#F3DFAE;--gold-lo:#9C7A3C;--ivory:#F5EEE2;--mist:#BDB2A6;--rose:#D79AA0;
+  --paper:#0E0A12;--card:#17101C;--blush:#3A1E2C;--field:#17101C;
+  --line:rgba(212,175,106,.3);--line-strong:rgba(212,175,106,.58);
+  --surface:linear-gradient(150deg,rgba(255,255,255,.07),rgba(255,255,255,.02));
+  --gold-grad:linear-gradient(100deg,#9C7A3C 0%,#E9CF94 28%,#FFF1CC 42%,#D4AF6A 58%,#9C7A3C 78%,#E2C485 100%);
+  --stage:radial-gradient(70% 55% at 18% 8%,rgba(74,16,34,.55),transparent 70%),radial-gradient(60% 50% at 88% 92%,rgba(45,20,51,.75),transparent 70%),linear-gradient(180deg,#0B0910,#08070B);
+  --s1:#1C1422;--s2:#160F1B;--s3:#22162A;--wh:46,30,52;--wh2:24,17,30;--hl:rgba(255,255,255,.07);--ink-fill:#E9CF94;
+  --env-bg:var(--stage);
+}
+:root[data-theme=dark]{
+  color-scheme:dark;
+  --onyx:#08070B;--onyx-2:#100C14;--aubergine:#1E0F24;--plum:#2D1433;--maroon:#4A1022;
+  --gold:#D4AF6A;--gold-hi:#F3DFAE;--gold-lo:#9C7A3C;--ivory:#F5EEE2;--mist:#BDB2A6;--rose:#D79AA0;
+  --paper:#0E0A12;--card:#17101C;--blush:#3A1E2C;--field:#17101C;
+  --line:rgba(212,175,106,.3);--line-strong:rgba(212,175,106,.58);
+  --surface:linear-gradient(150deg,rgba(255,255,255,.07),rgba(255,255,255,.02));
+  --gold-grad:linear-gradient(100deg,#9C7A3C 0%,#E9CF94 28%,#FFF1CC 42%,#D4AF6A 58%,#9C7A3C 78%,#E2C485 100%);
+  --stage:radial-gradient(70% 55% at 18% 8%,rgba(74,16,34,.55),transparent 70%),radial-gradient(60% 50% at 88% 92%,rgba(45,20,51,.75),transparent 70%),linear-gradient(180deg,#0B0910,#08070B);
+  --s1:#1C1422;--s2:#160F1B;--s3:#22162A;--wh:46,30,52;--wh2:24,17,30;--hl:rgba(255,255,255,.07);--ink-fill:#E9CF94;
+}
+html{transition:background-color .4s}

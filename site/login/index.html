@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="__CSP__">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<title>Sign in · Rehan &amp; Siddiqua</title>
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/tools.css">
+<script type="module" src="../assets/js/login.js"></script>
+</head>
+<body class="login-page">
+<main class="login-card">
+  <svg class="login-mono" viewBox="0 0 640 841" aria-hidden="true"><image href="../assets/img/rs-logo-gold.png" width="640" height="841"/></svg>
+  <p class="label">Private</p>
+  <h1>Sign in</h1>
+  <p class="muted" id="login-for">For the couple only.</p>
+  <form id="login" novalidate>
+    <label class="field"><span>Username</span><input id="user" autocomplete="username" autocapitalize="none" spellcheck="false" required></label>
+    <label class="field"><span>Password</span><input id="pass" type="password" autocomplete="current-password" required></label>
+    <button class="btn solid" type="submit" id="go">Sign in</button>
+    <p role="alert" id="login-msg"></p>
+  </form>
+  <p class="warn" id="nopass" hidden>No login is set yet, so these pages are open. Set one with <code>npm run login -- yourname "your password"</code>, then publish.</p>
+</main>
+</body>
+</html>

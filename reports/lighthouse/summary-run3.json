@@ -1,0 +1,86 @@
+[
+  {
+    "page": "invite",
+    "formFactor": "mobile",
+    "performance": 94,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "LCP": "1.8 s",
+    "CLS": "0",
+    "TBT": "270 ms",
+    "transferKB": 106
+  },
+  {
+    "page": "invite",
+    "formFactor": "desktop",
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "LCP": "0.4 s",
+    "CLS": "0",
+    "TBT": "0 ms",
+    "transferKB": 106
+  },
+  {
+    "page": "invite-personalised",
+    "formFactor": "mobile",
+    "performance": 93,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "LCP": "1.8 s",
+    "CLS": "0",
+    "TBT": "320 ms",
+    "transferKB": 106
+  },
+  {
+    "page": "invite-personalised",
+    "formFactor": "desktop",
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "LCP": "0.4 s",
+    "CLS": "0",
+    "TBT": "10 ms",
+    "transferKB": 106
+  },
+  {
+    "page": "create",
+    "formFactor": "desktop",
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 63,
+    "LCP": "0.3 s",
+    "CLS": "0.012",
+    "TBT": "0 ms",
+    "transferKB": 228
+  },
+  {
+    "page": "admin",
+    "formFactor": "desktop",
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 63,
+    "LCP": "0.6 s",
+    "CLS": "0.003",
+    "TBT": "50 ms",
+    "transferKB": 249
+  },
+  {
+    "page": "dashboard",
+    "formFactor": "desktop",
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 63,
+    "LCP": "0.4 s",
+    "CLS": "0",
+    "TBT": "0 ms",
+    "transferKB": 84
+  }
+]

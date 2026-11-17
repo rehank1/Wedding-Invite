@@ -1,0 +1,14 @@
+{
+  "name": "Rehan & Siddiqua",
+  "short_name": "R & S",
+  "description": "Nikah & Reception invitation, December 2026",
+  "start_url": "./?skip=1",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#08070B",
+  "theme_color": "#08070B",
+  "icons": [
+    { "src": "assets/img/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

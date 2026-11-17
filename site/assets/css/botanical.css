@@ -1,0 +1,178 @@
+/* BOTANICAL LIGHT · blush paper, window light, gold line-art botanicals. Overrides tour.css for the light edition. */
+body{background:var(--paper)}
+body::before{background:var(--stage)}
+/* paper texture: a whisper of grain */
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.35;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .35 0 0 0 0 .28 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+.ch+.ch::before{background:linear-gradient(90deg,transparent,var(--line-strong),transparent)}
+.ch-num{color:rgba(138,106,46,.08);font-family:var(--display);font-style:italic}
+.ch h2{font-weight:400;letter-spacing:.02em}
+.label{color:var(--gold)}
+.accent{color:var(--mist)}
+.panel-glass{background:var(--surface);border-color:var(--line);box-shadow:0 1px 0 var(--hl,#fff) inset,0 30px 60px -36px rgba(110,80,50,.35)}
+.panel-glass::after{border-color:rgba(138,106,46,.16)}
+
+/* ---------- first page ---------- */
+#envelope{background:linear-gradient(180deg,var(--s2,#F6EEE6),var(--s2,#EFE4D8));color:var(--ivory)}
+#envelope .light{position:absolute;inset:-30%;pointer-events:none;
+  background:linear-gradient(118deg,transparent 30%,rgba(var(--wh,255,255,255),.55) 42%,transparent 50%,rgba(var(--wh,255,255,255),.35) 58%,transparent 66%);
+  animation:light 14s ease-in-out infinite alternate}
+@keyframes light{to{transform:translate3d(6%,4%,0) rotate(1.5deg)}}
+.intro{width:min(100%,26rem);gap:.25rem}
+.art{width:min(72vw,330px,46vh);height:auto;overflow:visible;margin-bottom:.2rem}
+.art .bot path,.art .bot circle{fill:none;stroke:#A9853F;stroke-width:1.05;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;
+  animation:grow 1.6s cubic-bezier(.55,.05,.3,1) var(--d,0s) forwards}
+.art .bot .fine{stroke-width:.7;opacity:.8}
+.art .bot .petal{fill:var(--s2,#F7F0E8);fill-opacity:0;animation:grow 1.6s cubic-bezier(.55,.05,.3,1) var(--d,0s) forwards,fillIn .9s ease calc(var(--d,0s) + .5s) forwards}
+.art .bot .backing{fill:var(--s2,#F7F0E8);stroke:none;opacity:0;animation:pop .8s ease var(--d,0s) forwards}
+@keyframes fillIn{to{fill-opacity:1}}
+.art .bot .dot{fill:#A9853F;stroke:none;opacity:0;animation:pop .6s var(--ease) var(--d,0s) forwards}
+@keyframes grow{to{stroke-dashoffset:0}}
+@keyframes pop{to{opacity:1}}
+.art .bot{display:none} /* the Victorian frame is the ornament now */
+.art .letters image{opacity:0;animation:inkIn 1.8s var(--ease) .3s forwards}
+.art .letters text{opacity:0;animation:inkIn 1.6s var(--ease) .5s forwards;filter:drop-shadow(0 1px 0 rgba(var(--wh,255,255,255),.8)) drop-shadow(0 8px 14px rgba(122,92,36,.22))}
+.art .letters text+text{animation-delay:.8s}
+@keyframes inkIn{from{opacity:0;clip-path:inset(0 0 100% 0)}to{opacity:1;clip-path:inset(0 0 0 0)}}
+.intro-kicker{letter-spacing:.42em;font-size:.66rem;margin:0;opacity:0;animation:rise 1s var(--ease) 2.2s forwards}
+.intro-title{font:400 clamp(1.5rem,6.6vw,2.2rem)/1.2 var(--display);letter-spacing:.08em;margin:.3rem 0 0;opacity:0;animation:rise 1s var(--ease) 2.4s forwards}
+.intro-title span{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.intro-for{color:var(--ivory);animation-delay:2.6s}
+.intro-sub{color:var(--mist);animation-delay:2.75s}
+.intro-go{animation-delay:3s;--c:var(--gold);color:var(--gold);background:rgba(var(--wh,255,255,255),.55);border-color:var(--line-strong)}
+.env-skip{--c:var(--mist);color:var(--mist);border-color:var(--line)}
+.falling{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.blossom{position:absolute;top:-4vh;left:var(--x);opacity:0;animation:fallB var(--d) linear var(--dl) infinite}
+.blossom path{fill:none;stroke:#A9853F;stroke-width:1.1}.blossom circle{fill:#A9853F}
+@keyframes fallB{0%{opacity:0;transform:translate3d(0,0,0) rotate(0)}10%{opacity:.85}90%{opacity:.85}100%{opacity:0;transform:translate3d(var(--sway),112vh,0) rotate(400deg)}}
+#envelope.opening .intro{animation:introOut .9s var(--ease) forwards}
+@keyframes introOut{to{opacity:0;scale:1.04;filter:blur(4px)}}
+
+/* ---------- chapters ---------- */
+.mono{filter:none}
+.mono-btn::before{background:conic-gradient(from 0deg,transparent 0 10%,rgba(201,168,94,.8) 16%,transparent 26% 50%,rgba(183,122,114,.5) 58%,transparent 68% 84%,rgba(201,168,94,.6) 92%,transparent)}
+.names{font-weight:400;letter-spacing:.06em}
+.names .n{filter:none}
+.names .amp{font-family:var(--display);font-style:italic;color:var(--gold-hi)}
+.dear{color:var(--gold)}
+.when{color:var(--ivory)}
+.bism{color:var(--gold)}
+.person h2{font-weight:400;letter-spacing:.12em}
+
+/* seal your dua */
+.letter{background:linear-gradient(170deg,var(--s1,#FFFDF9),var(--s2,#F8F1E8));border-color:var(--line-strong);
+  box-shadow:inset 0 0 0 6px var(--s1,#FFFDF9),inset 0 0 0 7px rgba(138,106,46,.3),0 30px 60px -30px rgba(110,80,50,.4)}
+.letter-fold{background:linear-gradient(180deg,var(--s2,#F3E9DD),var(--s3,#EADDCD))}
+.letter-dua{color:var(--gold)}
+.sign-hint{color:color-mix(in srgb,var(--mist) 55%,transparent)}
+.dua-pickers .pick span,.poison .pick span{color:var(--ivory);background:rgba(var(--wh,255,255,255),.5)}
+.pick input:checked+span{background:rgba(201,168,94,.18);border-color:var(--gold)}
+.chest path{fill:var(--s1,#FBF6EE)}
+.sent{color:var(--gold)}
+
+/* pocket watch: ivory enamel dial */
+.watch-face{background:radial-gradient(circle at 50% 42%,var(--s1,#FFFDF8) 0 55%,var(--s2,#F4EBDD) 72%,var(--s3,#EADCC8));
+  box-shadow:0 0 0 7px var(--s2,#F7EFE4),0 0 0 10px #B8954F,0 0 0 13px #7A5C24,0 0 0 15px #E3CB8C,0 30px 60px -18px rgba(110,80,50,.45),inset 0 0 30px rgba(138,106,46,.18)}
+.watch-face::before{background:repeating-conic-gradient(#8A6A2E 0 2deg,#E3CB8C 2deg 4deg)}
+.watch-bow{background:linear-gradient(var(--s2,#F3EAE1),var(--s2,#F3EAE1)) padding-box,var(--gold-grad) border-box}
+.dial .tick{stroke:rgba(138,106,46,.45)}.dial .tick.big{stroke:#7A5C24}
+.dial .num{fill:var(--ink-fill,#3A2E28);font-family:Bodoni,serif}
+.glass{background:linear-gradient(140deg,rgba(var(--wh,255,255,255),.55),transparent 40%,transparent 70%,rgba(var(--wh,255,255,255),.2))}
+.jewel .gem{box-shadow:0 0 0 2px var(--s1,#FFFDF8),0 0 0 3px rgba(138,106,46,.6)}
+.jewel[aria-pressed=true] .gem{box-shadow:0 0 0 2px var(--s1,#FFFDF8),0 0 0 4px var(--gold),0 0 16px 4px rgba(183,122,114,.45)}
+.wtab{color:var(--mist)}.wtab[aria-selected=true]{color:#FFFBF4}
+.watch-tabs{background:rgba(var(--wh,255,255,255),.5)}
+.readout .what{color:var(--ivory)}
+
+/* countdown + scratch */
+.flip .h{background:linear-gradient(180deg,var(--s1,#FFFDF8),var(--s2,#F3E9DC));box-shadow:inset 0 1px 0 var(--hl,#fff)}
+.flip .b{background:linear-gradient(180deg,var(--s2,#F3E9DC),var(--s3,#EADCC8))}
+.flip .t{border-bottom-color:rgba(138,106,46,.25)}
+.flip .h span{background:linear-gradient(180deg,#8A6A2E,#6E5322);-webkit-background-clip:text;background-clip:text}
+.unit .label{color:var(--mist)}
+.scratch-date{background:var(--s1,#FFFDF8);color:var(--gold)}
+
+/* closing */
+.credits .who{color:var(--ivory)}
+.fine-print{color:color-mix(in srgb,var(--mist) 80%,transparent)}
+
+/* chrome: light glass */
+.ctl{background:rgba(var(--wh2,255,253,248),.72);color:var(--gold);border-color:var(--line)}
+.dock{background:rgba(var(--wh2,255,253,248),.78);border-color:var(--line);box-shadow:inset 0 1px 0 var(--hl,#fff),0 18px 40px -18px rgba(110,80,50,.45)}
+.dock-btn{color:var(--ivory)}
+.dock-btn.primary{color:#FFFBF4}.dock-btn.primary .ico{color:#FFFBF4}
+.rail a{border-color:var(--line-strong)}.rail a.active{background:var(--gold)}
+.rail a span{color:var(--gold)}
+.consent{background:rgba(var(--wh2,255,253,248),.92)}
+.mote{background:radial-gradient(circle,var(--s1,#FFF4DA) 0,#C9A85E 45%,rgba(201,168,94,0) 70%)}
+
+/* the After Hours card stays a dark, late-night secret */
+.ah-back{color:#F5EEE2}
+.ah-back .field>span,.ah-back dt{color:#D4AF6A}
+.ah-back input{color:#F5EEE2;border-bottom-color:rgba(212,175,106,.4)}
+.ah-back .pick span{color:#F5EEE2;background:rgba(var(--wh,255,255,255),.04);border-color:rgba(212,175,106,.32)}
+.ah-front{background:linear-gradient(180deg,var(--s2,#F6EEE6),var(--s2,#EFE4D8))}
+dialog.ah::backdrop{background:rgba(47,37,32,.55)}
+
+/* ---------- watercolour florals: one fixed layer, corners bleed off the viewport, bloom + fade per chapter ---------- */
+.wc-layer{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+#main,#footer{position:relative;z-index:1}
+.wc{position:absolute;opacity:0;transition:opacity .5s linear,transform .6s cubic-bezier(.2,.7,.2,1);will-change:opacity,transform}
+.wc img{display:block;width:100%;height:auto;animation:wcSway 11s ease-in-out infinite alternate}
+.wc-tr{width:min(46vw,380px);top:-7%;right:-9%;transform-origin:85% 15%}
+.wc-tl{width:min(46vw,380px);top:-7%;left:-9%;transform-origin:15% 15%}
+.wc-tl img{scale:-1 1}
+.wc-bl{width:min(68vw,520px);bottom:-9%;left:-8%;transform-origin:15% 90%}
+.wc-br{width:min(68vw,520px);bottom:-9%;right:-8%;transform-origin:85% 90%}
+.wc-bl img,.wc-br img{animation-duration:13s;animation-delay:-4s}
+/* the sprays were cut from a long border: dissolve the cut edges into the paper from their corner */
+.wc-bl img{-webkit-mask-image:radial-gradient(120% 135% at 0% 100%,#000 52%,transparent 74%);mask-image:radial-gradient(120% 135% at 0% 100%,#000 52%,transparent 74%)}
+.wc-br img{-webkit-mask-image:radial-gradient(120% 135% at 100% 100%,#000 52%,transparent 74%);mask-image:radial-gradient(120% 135% at 100% 100%,#000 52%,transparent 74%)}
+@keyframes wcSway{from{rotate:-1.6deg}to{rotate:1.6deg}}
+@media (max-width:700px){.wc-layer{opacity:.7}}
+@media (prefers-reduced-motion:reduce){.wc,.wc img{animation:none;transition:none}}
+/* footer credit: the CodeWorks mark swaps with the theme (ink "Code" on paper, white "Code" on onyx) */
+.made-by{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.55rem;margin:.6rem 0 0;font:500 .62rem/1.4 var(--sans);letter-spacing:.32em;text-transform:uppercase;color:var(--mist)}
+.made-by .cw{display:inline-flex}
+.made-by img{height:22px;width:auto;opacity:.92;transition:opacity .3s}
+.made-by .cw-dark{display:none}
+:root[data-theme=dark] .made-by .cw-light{display:none}
+:root[data-theme=dark] .made-by .cw-dark{display:block}
+:root:not([data-theme=light]) .made-by .cw-light{display:none}:root:not([data-theme=light]) .made-by .cw-dark{display:block}
+/* guest names can be anything: long unbroken words wrap instead of running off a phone screen */
+#env-for,.intro-for,.dear,#dear{overflow-wrap:anywhere}
+
+/* ---------- opening: the envelope film (same in both themes) ---------- */
+#envelope{place-items:end center;background:#1A130D}
+#envelope .env-film{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%;z-index:0;transform:scale(1.02)}
+#envelope .env-veil{position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(180deg,rgba(20,14,10,0) 38%,rgba(20,14,10,.5) 72%,rgba(20,14,10,.78) 100%);transition:opacity .8s ease}
+#envelope .light,#envelope .falling{display:none}
+#envelope .intro{padding-bottom:max(2.2rem,env(safe-area-inset-bottom));transition:opacity .6s ease,transform .8s var(--ease)}
+#envelope .intro-kicker{color:#E9CF94}
+#envelope .intro-title{color:#F8EFE2}
+#envelope .intro-for,#envelope .intro-sub{color:rgba(248,239,226,.88)}
+#envelope .intro-go{color:#F3DFAE;border-color:rgba(243,223,174,.7);background:rgba(20,14,10,.35);backdrop-filter:blur(6px)}
+#envelope .env-skip{color:#F3DFAE;border-color:rgba(243,223,174,.5);background:rgba(20,14,10,.35)}
+/* tap: the text steps aside and the seal breaks */
+#envelope.playing .intro{opacity:0;transform:translateY(14px);pointer-events:none}
+#envelope.playing .env-veil{opacity:0}
+/* the golden light peaks: the whole opening dissolves into the invitation */
+#envelope.opening{animation:filmOut 1.35s ease forwards}
+@keyframes filmOut{0%{opacity:1;filter:brightness(1)}45%{opacity:1;filter:brightness(1.35)}100%{opacity:0;filter:brightness(1.6)}}
+@media (prefers-reduced-motion:reduce){#envelope .env-film{transform:none}}
+#envelope .env-film{object-position:50% 28%}
+#envelope .env-veil{background:linear-gradient(180deg,rgba(18,12,8,0) 30%,rgba(18,12,8,.55) 56%,rgba(18,12,8,.82) 78%,rgba(18,12,8,.9) 100%)}
+#envelope .intro-title,#envelope .intro-title *{background:none;-webkit-text-fill-color:#FBF4EA;color:#FBF4EA}
+#envelope .intro *{text-shadow:0 1px 2px rgba(0,0,0,.55),0 0 18px rgba(0,0,0,.35)}
+#envelope .intro-go{text-shadow:none}
+
+/* ---------- the couple's names in calligraphy (Pinyon Script: formal copperplate, still easy to read) ---------- */
+.names .n,#groom-name,#bride-name,.intro-title #env-names{font-family:var(--script);font-weight:400;letter-spacing:0;text-transform:none}
+.names .n{font-size:clamp(3.4rem,15vw,6.8rem);line-height:1.12;padding:0 .14em .06em;display:inline-block} /* room for the swashes inside the gold clip */
+.names .amp{font-size:.62em;margin:.1em 0}
+#groom-name,#bride-name{font-size:clamp(2.6rem,10vw,3.8rem);line-height:1.2;padding:0 .12em}
+#envelope .intro-title{letter-spacing:0}
+#envelope .intro-title #env-names{font-size:1.55em;line-height:1.15}
+/* Great Vibes' capitals swash well above the line: give the gold-clipped names headroom (offset by negative margin so nothing moves) */
+.names .n{padding:.3em .22em .14em;margin:-.24em 0 -.08em}
+#groom-name,#bride-name{padding:.3em .2em .12em;margin:-.22em 0 -.06em}

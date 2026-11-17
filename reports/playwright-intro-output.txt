@@ -1,0 +1,6 @@
+
+Running 1 test using 1 worker
+
+  ok 1 [intro] › tests\perf.spec.js:4:1 › layout stability (CLS) and scroll smoothness (3.8s)
+
+  1 passed (7.7s)

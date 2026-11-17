@@ -1,0 +1,135 @@
+{
+  "site": {
+    "title": "Rehan & Siddiqua",
+    "description": "You are invited to the Nikah and Reception of Rehan and Siddiqua, 18 and 19 December 2026, Pune.",
+    "url": "https://rehank1.github.io/Wedding-Invite/",
+    "ga4": "G-XXXXXXX",
+    "rsvpEndpoint": "",
+    "lookerUrl": "",
+    "inviteKey": "UAXqqkXYM8gvfIoCm8cMPg8IAzviIg_C5_OVyqXLBpo.u7QOCGbJS-46KsAwrVv6eEWGWVIDDwLZ5_gk73UhmRw",
+    "createLogin": "pbkdf2$210000$V7pHktbszKouoZxppGVbvg$hdAVyB-rp5gSHo3ChfvVG5agtHpHGZOCpYRAWjxMtWE",
+    "adminLogin": "pbkdf2$210000$SQEQErFarrQ4nnTI4o6rcg$3SrlHcpwuL1PylnpVALeZLzI5GwhEYp1giQCfPZZBrg",
+    "createSeal": "AMqH42p4kdZhheOJxRYXEA.jINswX0dwN_KhF0x.mfENLfFwP5oRwKRqJhkAejKGi1TyDUqlRVaaPVSp5SmRVyW0c02x3kfYIZLcuSdgxFmgHGo6PesJesjHWqlT5rL9DSHFFwS8vcSp7csf3vZKR8IHpEytosRFic5lTE5q5Vz4UkdsuVJmMYUQN-RPiHTdt6oqrYiNoKdXuztACuXQtI5lG82GhbzT0Eu_k_4qdHUNZWH9U0UdSQBsodZCAeQgMuiDWR1C7n58JLV5eRDc8kNGN4QrdBY1URafCYCoQBoFVWsNcx8",
+    "adminSeal": "ETfhOXSlLIOTdpjn9BbYHw.g5cDVS7HoWeNGhby.yNFwMDLYIFGA_Hn8143AIUwYiH6kX7qmvXxmtZ9_ZXLMAXHNOM0o05Wh6CNLUHxCI3DrttCRia76GNDa06QpZqOW4POPIiXDKZ-JmFE5rw4VKxNDRB4l1BWKG037KD8CkjowFtjHbsvD7VXe1A56WBD0ScMVEhXqKukbEX88GmmbeoAGJNoKj9bQ3aBnUESsvoJcI4Tds8PNZQycgUaC-kUeJR9O0o7RIXvqxHnfcwpyG48bB80wotlyndacfm8pct_YocfBqow"
+  },
+  "couple": {
+    "groom": {
+      "name": "Rehan",
+      "fullName": "Rehan Kazi",
+      "parents": "Son of Marhoom Mr. Mohd. Galib Kazi and Mrs. Shaheen Kazi"
+    },
+    "bride": {
+      "name": "Siddiqua",
+      "fullName": "Siddiqua Shariff",
+      "parents": "Daughter of Mr. and Mrs. Sarfaraz Ibrahim Shariff"
+    },
+    "monogram": "R & S",
+    "hashtag": ""
+  },
+  "wording": {
+    "bismillahArabic": "بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "bismillahEnglish": "In the Name of God, the Most Beneficent and the Most Merciful",
+    "memorial": "In loving memory of Marhoom Mr. Mohd. Galib Kazi and with the warm blessings of Mrs. Shaheen Kazi",
+    "request": "We cordially request the pleasure of your company, along with your family and friends, on the auspicious occasion of",
+    "closing": "We request the honour of your gracious presence and your blessings for the newlyweds on this joyous occasion.",
+    "closingDuaArabic": "بَارَكَ ٱللَّٰهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ",
+    "closingDuaEnglish": "May Allah bless you both, shower His blessings upon you, and unite you in goodness.",
+    "compliments": "Kazi Family, Relatives, and Friends",
+    "duasFrom": "Rumaisha, Mohammad Ali, and Minsa",
+    "duaLines": [
+      "May Allah bless your union and fill your home with mercy.",
+      "May your love be a source of peace, and your home a place of tranquillity.",
+      "May Allah unite you both in goodness, in this world and the next."
+    ]
+  },
+  "events": [
+    {
+      "id": "nikah",
+      "name": "Nikah",
+      "occasion": "the Nikah of their beloved son",
+      "date": "2026-12-18",
+      "time": "19:00",
+      "endTime": "23:00",
+      "timeNote": "7:00 PM onwards (after Namaz-e-Maghrib)",
+      "hijri": "08th Rajab 1448 Hijri",
+      "venue": "Krishna Lawns",
+      "address": "SRPF, Wanowrie, Pune",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Krishna%20Lawns%2C%20SRPF%2C%20Wanowrie%2C%20Pune",
+      "notes": "",
+      "programme": [
+        {
+          "time": "7:00 PM",
+          "title": "Guests arrive",
+          "note": ""
+        },
+        {
+          "time": "After Maghrib",
+          "title": "The Nikah",
+          "note": ""
+        },
+        {
+          "time": "",
+          "title": "Dinner",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "walima",
+      "name": "Reception",
+      "occasion": "the wedding reception of their beloved son",
+      "date": "2026-12-19",
+      "time": "19:00",
+      "endTime": "23:00",
+      "timeNote": "7:00 PM onwards (after Namaz-e-Maghrib)",
+      "hijri": "09th Rajab 1448 Hijri",
+      "venue": "Krishna Lawns",
+      "address": "SRPF, Wanowrie, Pune",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Krishna%20Lawns%2C%20SRPF%2C%20Wanowrie%2C%20Pune",
+      "notes": "",
+      "programme": [
+        {
+          "time": "7:00 PM",
+          "title": "Guests arrive",
+          "note": ""
+        },
+        {
+          "time": "After Maghrib",
+          "title": "The couple arrives",
+          "note": ""
+        },
+        {
+          "time": "",
+          "title": "Dinner",
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "music": {
+    "src": [
+      "assets/audio/dn.m4a",
+      "assets/audio/im.m4a",
+      "assets/audio/instrument-1.m4a"
+    ],
+    "title": ""
+  },
+  "afterparty": {
+    "name": "After Hours",
+    "date": "",
+    "time": "",
+    "venue": "",
+    "mapsUrl": "",
+    "dressCode": "",
+    "note": "Bring your own booze if you want. The host doesn't drink (it's haraam), and honestly you should skip it too 😉"
+  },
+  "dayOf": {
+    "photoAlbumUrl": "",
+    "parking": "",
+    "note": ""
+  },
+  "footer": {
+    "thanks": "",
+    "family": "Kazi Family, Relatives, and Friends"
+  }
+}

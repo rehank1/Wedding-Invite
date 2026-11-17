@@ -1,0 +1,22 @@
+[
+  {
+    "width": 390,
+    "vs": "invite-envelope",
+    "paletteOverlapWithRamadan": 0.024
+  },
+  {
+    "width": 390,
+    "vs": "invite-card",
+    "paletteOverlapWithRamadan": 0.576
+  },
+  {
+    "width": 1440,
+    "vs": "invite-envelope",
+    "paletteOverlapWithRamadan": 0.006
+  },
+  {
+    "width": 1440,
+    "vs": "invite-card",
+    "paletteOverlapWithRamadan": 0.854
+  }
+]
